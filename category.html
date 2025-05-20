@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category - Unfold Magazine</title>
+    <meta name="description" content="Browse articles in this category" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="index.html" class="logo">UNFOLD</a>
+            <nav class="main-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html?slug=culture">Culture</a></li>
+                <li><a href="category.html?slug=business">Business</a></li>
+                <li><a href="category.html?slug=lifestyle">Lifestyle</a></li>
+                <li><a href="category.html?slug=travel">Travel</a></li>
+                <li><a href="table-of-contents.html">Contents</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="category-container container">
+          <header class="category-header">
+            <h1 class="category-title">Category Name</h1>
+            
+            <div class="category-filters">
+              <button class="category-filter" data-category="culture">
+                Culture
+                <span class="count">(5)</span>
+              </button>
+              <button class="category-filter" data-category="business">
+                Business
+                <span class="count">(3)</span>
+              </button>
+              <button class="category-filter" data-category="lifestyle">
+                Lifestyle
+                <span class="count">(4)</span>
+              </button>
+              <button class="category-filter" data-category="travel">
+                Travel
+                <span class="count">(6)</span>
+              </button>
+            </div>
+            
+            <div class="category-divider"></div>
+          </header>
+
+          <div class="article-grid">
+            <!-- Article cards will be dynamically populated based on the selected category -->
+            <article class="article-card">
+              <a href="article.html?slug=special-issue-nigeria-youth-entrepreneurship-revolution" class="article-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Youth Entrepreneurship">
+                <span class="category-badge">Culture</span>
+              </a>
+              <div class="article-content">
+                <a href="article.html?slug=special-issue-nigeria-youth-entrepreneurship-revolution">
+                  <h3>Special Issue: Nigeria's Youth Entrepreneurship Revolution</h3>
+                </a>
+                <p class="article-meta">By Ade Johnson • May 10, 2023</p>
+              </div>
+            </article>
+            
+            <article class="article-card">
+              <a href="article.html?slug=afrobeats-to-the-world" class="article-image">
+                <img src="https://images.unsplash.com/photo-1516223725307-6f76b9ec8742?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Afrobeats">
+                <span class="category-badge">Culture</span>
+              </a>
+              <div class="article-content">
+                <a href="article.html?slug=afrobeats-to-the-world">
+                  <h3>Afrobeats to the World: The Evolution of Nigerian Music</h3>
+                </a>
+                <p class="article-meta">By Femi Adeyemi • April 15, 2023</p>
+              </div>
+            </article>
+            
+            <article class="article-card">
+              <a href="article.html?slug=faces-of-the-future-young-nigerians" class="article-image">
+                <img src="https://images.unsplash.com/photo-1521493959102-6511b1915811?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Young Nigerians">
+                <span class="category-badge">Culture</span>
+              </a>
+              <div class="article-content">
+                <a href="article.html?slug=faces-of-the-future-young-nigerians">
+                  <h3>Faces of the Future: Young Nigerians Leading the Wave</h3>
+                </a>
+                <p class="article-meta">By Ngozi Okafor • April 28, 2023</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-logo">UNFOLD</div>
+            <p class="footer-tagline">A bold new space where stories rise, style speaks, and every page drips with purpose and pulse.</p>
+          </div>
+          <div class="footer-middle">
+            <div class="footer-nav">
+              <h3>Categories</h3>
+              <ul>
+                <li><a href="category.html?slug=culture">Culture</a></li>
+                <li><a href="category.html?slug=business">Business</a></li>
+                <li><a href="category.html?slug=lifestyle">Lifestyle</a></li>
+                <li><a href="category.html?slug=travel">Travel</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav">
+              <h3>Pages</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="table-of-contents.html">Table of Contents</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav">
+              <h3>Subscribe</h3>
+              <form class="subscribe-form">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 UNFOLD Magazine. All rights reserved.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating Buttons -->
+      <div class="floating-buttons">
+        <a href="table-of-contents.html" class="toc-button" aria-label="Table of Contents">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="16" y2="18"></line>
+          </svg>
+        </a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
